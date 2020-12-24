@@ -1,0 +1,360 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-24T03:20:36.004Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected \u0027:\u0027 at line 1 column 185 path $..288\r\n\tat com.google.gson.Gson.fromJson(Gson.java:947)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:897)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:846)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:817)\r\n\tat com.youlu.config.LoginConfig.getToken(LoginConfig.java:25)\r\n\tat com.youlu.step.QBStepDefinitions.before(QBStepDefinitions.java:25)\r\nCaused by: com.google.gson.stream.MalformedJsonException: Expected \u0027:\u0027 at line 1 column 185 path $..288\r\n\tat com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1564)\r\n\tat com.google.gson.stream.JsonReader.doPeek(JsonReader.java:531)\r\n\tat com.google.gson.stream.JsonReader.peek(JsonReader.java:426)\r\n\tat com.google.gson.internal.bind.ObjectTypeAdapter.read(ObjectTypeAdapter.java:55)\r\n\tat com.google.gson.internal.bind.ObjectTypeAdapter.read(ObjectTypeAdapter.java:70)\r\n\tat com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41)\r\n\tat com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:187)\r\n\tat com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:932)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:897)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:846)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:817)\r\n\tat com.youlu.config.LoginConfig.getToken(LoginConfig.java:25)\r\n\tat com.youlu.step.QBStepDefinitions.before(QBStepDefinitions.java:25)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:483)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)\r\n\tat io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)\r\n\tat io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:63)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:95)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 2366000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.youlu.step.QBStepDefinitions.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "we get the true",
+        "description": "",
+        "id": "get-user-verify-code;we-get-the-true",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 3,
+            "name": "name is \"QB0001\" and testId is \"0001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"QB0001\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"0001\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.youlu.step.QBStepDefinitions.qb(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "method is \"post\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"post\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.youlu.step.QBStepDefinitions.get(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "assert result\u003d\"000000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"000000\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.youlu.step.QBStepDefinitions.assertResultValue(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "get user verify code",
+    "description": "",
+    "id": "get-user-verify-code",
+    "keyword": "Feature",
+    "uri": "classpath:features//A0000.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-24T03:20:38.458Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected \u0027:\u0027 at line 1 column 185 path $..288\r\n\tat com.google.gson.Gson.fromJson(Gson.java:947)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:897)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:846)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:817)\r\n\tat com.youlu.config.LoginConfig.getToken(LoginConfig.java:25)\r\n\tat com.youlu.step.QBStepDefinitions.before(QBStepDefinitions.java:25)\r\nCaused by: com.google.gson.stream.MalformedJsonException: Expected \u0027:\u0027 at line 1 column 185 path $..288\r\n\tat com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1564)\r\n\tat com.google.gson.stream.JsonReader.doPeek(JsonReader.java:531)\r\n\tat com.google.gson.stream.JsonReader.peek(JsonReader.java:426)\r\n\tat com.google.gson.internal.bind.ObjectTypeAdapter.read(ObjectTypeAdapter.java:55)\r\n\tat com.google.gson.internal.bind.ObjectTypeAdapter.read(ObjectTypeAdapter.java:70)\r\n\tat com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41)\r\n\tat com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:187)\r\n\tat com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:932)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:897)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:846)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:817)\r\n\tat com.youlu.config.LoginConfig.getToken(LoginConfig.java:25)\r\n\tat com.youlu.step.QBStepDefinitions.before(QBStepDefinitions.java:25)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:483)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)\r\n\tat io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)\r\n\tat io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:63)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:95)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 203000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.youlu.step.QBStepDefinitions.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "demo scenario",
+        "description": "",
+        "id": "demo-test;demo-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 3,
+            "name": "1 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                },
+                {
+                  "val": "2",
+                  "offset": 2
+                }
+              ],
+              "location": "com.youlu.StepDefinitions.step1(int,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "add",
+            "match": {
+              "location": "com.youlu.StepDefinitions.step2()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "assert 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 7
+                }
+              ],
+              "location": "com.youlu.StepDefinitions.step3(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "demo test",
+    "description": "",
+    "id": "demo-test",
+    "keyword": "Feature",
+    "uri": "classpath:features//QB0001.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-24T03:20:38.673Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected \u0027:\u0027 at line 1 column 185 path $..288\r\n\tat com.google.gson.Gson.fromJson(Gson.java:947)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:897)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:846)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:817)\r\n\tat com.youlu.config.LoginConfig.getToken(LoginConfig.java:25)\r\n\tat com.youlu.step.QBStepDefinitions.before(QBStepDefinitions.java:25)\r\nCaused by: com.google.gson.stream.MalformedJsonException: Expected \u0027:\u0027 at line 1 column 185 path $..288\r\n\tat com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1564)\r\n\tat com.google.gson.stream.JsonReader.doPeek(JsonReader.java:531)\r\n\tat com.google.gson.stream.JsonReader.peek(JsonReader.java:426)\r\n\tat com.google.gson.internal.bind.ObjectTypeAdapter.read(ObjectTypeAdapter.java:55)\r\n\tat com.google.gson.internal.bind.ObjectTypeAdapter.read(ObjectTypeAdapter.java:70)\r\n\tat com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41)\r\n\tat com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:187)\r\n\tat com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:932)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:897)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:846)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:817)\r\n\tat com.youlu.config.LoginConfig.getToken(LoginConfig.java:25)\r\n\tat com.youlu.step.QBStepDefinitions.before(QBStepDefinitions.java:25)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:483)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)\r\n\tat io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)\r\n\tat io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:63)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:95)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 348000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.youlu.step.QBStepDefinitions.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "i don\u0027t want speak,without token",
+        "description": "",
+        "id": "we-test-the-user-information;i-don-t-want-speak-without-token",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 3,
+            "name": "name is \"QB0004\" and testId is \"0001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"QB0004\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"0001\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.youlu.step.QBStepDefinitions.qb(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "method is \"get\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"get\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.youlu.step.QBStepDefinitions.get(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "assert result\u003d\"GB2004\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GB2004\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.youlu.step.QBStepDefinitions.assertResultValue(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-24T03:20:39.039Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected \u0027:\u0027 at line 1 column 185 path $..288\r\n\tat com.google.gson.Gson.fromJson(Gson.java:947)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:897)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:846)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:817)\r\n\tat com.youlu.config.LoginConfig.getToken(LoginConfig.java:25)\r\n\tat com.youlu.step.QBStepDefinitions.before(QBStepDefinitions.java:25)\r\nCaused by: com.google.gson.stream.MalformedJsonException: Expected \u0027:\u0027 at line 1 column 185 path $..288\r\n\tat com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1564)\r\n\tat com.google.gson.stream.JsonReader.doPeek(JsonReader.java:531)\r\n\tat com.google.gson.stream.JsonReader.peek(JsonReader.java:426)\r\n\tat com.google.gson.internal.bind.ObjectTypeAdapter.read(ObjectTypeAdapter.java:55)\r\n\tat com.google.gson.internal.bind.ObjectTypeAdapter.read(ObjectTypeAdapter.java:70)\r\n\tat com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:41)\r\n\tat com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:187)\r\n\tat com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:932)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:897)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:846)\r\n\tat com.google.gson.Gson.fromJson(Gson.java:817)\r\n\tat com.youlu.config.LoginConfig.getToken(LoginConfig.java:25)\r\n\tat com.youlu.step.QBStepDefinitions.before(QBStepDefinitions.java:25)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:483)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)\r\n\tat io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)\r\n\tat io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:63)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:95)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 170000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.youlu.step.QBStepDefinitions.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "i don\u0027t want speak anyway with token",
+        "description": "",
+        "id": "we-test-the-user-information;i-don-t-want-speak-anyway-with-token",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "name is \"QB0004\" and testId is \"0001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"QB0004\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"0001\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.youlu.step.QBStepDefinitions.qb(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "token is \"{token}\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"{token}\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.youlu.step.QBStepDefinitions.stepAnd(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "method is \"get\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"get\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.youlu.step.QBStepDefinitions.get(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "assert result\u003d\"000000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"000000\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.youlu.step.QBStepDefinitions.assertResultValue(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "we test the user information",
+    "description": "",
+    "id": "we-test-the-user-information",
+    "keyword": "Feature",
+    "uri": "classpath:features//QB0004.feature",
+    "tags": []
+  }
+]

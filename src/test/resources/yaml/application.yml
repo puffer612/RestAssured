@@ -1,0 +1,19 @@
+mysql:
+  driverName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://192.168.28.42:3306/cucumbers
+  username: root
+  password: '123456'
+
+api:
+  test: http://umsatest.niceloo.com/api/
+  uat: http://umsauat.niceloo.com/api/
+
+redis:
+  ip: 192.168.28.42
+  port: 6379
+  auth: 123456
+  MAX_ACTIVE: 1024
+  MAX_IDLE: 200
+  MAX_WAIT: 10000
+  TIMEOUT: 10000
+  BORROW: true
